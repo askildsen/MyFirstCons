@@ -10,6 +10,19 @@ namespace MyFirstConsoleApp
     {
         static void Main(string[] args)
         {
+            string result = "";
+
+            foreach (string value in args)
+            {
+                result += value + " ";
+            }
+            Console.WriteLine(result);
+
+            Console.WriteLine();
+            Console.WriteLine("Please reply");
+            string input = Console.ReadLine();
+            Console.WriteLine("You wrote: \"" + input + "\". Are you serious?");
+            Console.ReadKey();
         }
     }
 }
